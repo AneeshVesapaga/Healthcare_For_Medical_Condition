@@ -65,24 +65,24 @@ if st.button("Submit"):
     if medical_condition == 1.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"cancer.jpg",width=300)
+        st.image(r"cancer.jpg",width=250)
     if medical_condition == 2.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"obesity.jpg",width=300)
+        st.image(r"obesity.jpg",width=250)
     if medical_condition == 3.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"diabetes.jpg",width=300)
+        st.image(r"diabetes.jpg",width=250)
     if medical_condition == 4.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"asthma.jpg",width=300)
+        st.image(r"asthma.jpg",width=250)
     if medical_condition == 5.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"hypertension.jpg",width=300)
+        st.image(r"hypertension.jpg",width=250)
     if medical_condition == 6.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"arthritis.jpg",width=300)
+        st.image(r"arthritis.jpg",width=250)
