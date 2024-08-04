@@ -5,7 +5,7 @@ import streamlit as st
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 
-st.image(r"ino_img.jpg")
+st.image(r"ino_img.jpg",width = 150)
 
 st.title("Healthcare For Medical Condition")
 
