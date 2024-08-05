@@ -11,7 +11,7 @@ st.image(r"ino_img.jpg")
 
 st.title("PREDICTING MEDICAL CONDITIONS")
 
-df = pd.read_csv(r"C:\Users\anees\Data Analysis\Machine Learing\ML jupyter problems\Phase 2\Health2.csv")
+df = pd.read_csv(r"Health2.csv")
 
 X = df.drop(["Medical Condition","Unnamed: 0"],axis = 1)
 y = df["Medical Condition"]
@@ -20,7 +20,7 @@ y = df["Medical Condition"]
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=23)
 
 
-model = pickle.load(open(r"C:\Users\anees\Data Analysis\Machine Learing\ML jupyter problems\Phase 2\dt.plk","rb"))
+model = pickle.load(open(r"dt.plk","rb"))
 
 Age = st.slider("Age",min_value=13,max_value=89,step=1)
 
@@ -68,24 +68,24 @@ if st.button("Submit"):
     if medical_condition == 1.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"C:\Users\anees\OneDrive\Pictures\Downloads\cancer.jpg",width=200)
+        st.image(r"cancer.jpg",width=200)
     if medical_condition == 2.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"C:\Users\anees\OneDrive\Pictures\Downloads\obesity.jpg",width=200)
+        st.image(r"obesity.jpg",width=200)
     if medical_condition == 3.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"C:\Users\anees\OneDrive\Pictures\Downloads\diabetes.jpg",width=200)
+        st.image(r"diabetes.jpg",width=200)
     if medical_condition == 4.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"C:\Users\anees\OneDrive\Pictures\Downloads\asthma.jpg",width=200)
+        st.image(r"asthma.jpg",width=200)
     if medical_condition == 5.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"C:\Users\anees\OneDrive\Pictures\Downloads\hypertension.jpg",width=200)
+        st.image(r"hypertension.jpg",width=200)
     if medical_condition == 6.0:
         st.write(f"Predicted Medical condition: {medical_condition}")
         st.write(f"Selected Medical Condition Type : {text8[medical_condition]}")
-        st.image(r"C:\Users\anees\OneDrive\Pictures\Downloads\arthritis.jpg",width=200)
+        st.image(r"arthritis.jpg",width=200)
